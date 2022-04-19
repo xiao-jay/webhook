@@ -15,15 +15,22 @@
 
 - [codeup](https://www.aliyun.com/product/yunxiao/codeup)
 
-
-
 ## Quickstart
 
 1、clone 项目
 
-2、初始化git submodule 子模块
+2、初始化git submodule 子模块并且拉取git-webhook-handler.git代码
 
 ```
 git submodule init
+git submodule update
 ```
 
+3、安装node,以ubuntu为例
+
+```
+apt-get install node
+npm install bl        // 安装bl
+```
+
+4、修改webhook.js
