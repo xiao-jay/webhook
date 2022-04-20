@@ -113,8 +113,6 @@ control+a+d       				//退出，千万不要control+c退出
 
 github仓库->setting->web hooks,点击add webhook，端口是默认9096，**记得服务器开启9096端口，或者换其他可以通的端口**，secret记得和webhook.js里面一样。
 
-![image-20220419225215304](/Users/jie/Library/Application Support/typora-user-images/image-20220419225215304.png)
-
 点击测试webhook
 
 ![](https://tva1.sinaimg.cn/large/e6c9d24ely1h1ffkwn11gj21ee0jw3zn.jpg)
