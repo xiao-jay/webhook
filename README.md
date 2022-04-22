@@ -87,7 +87,16 @@ handler.on('issues', function (event) {
 
 cd /root/model-manage
 git pull
+
 ```
+
+并且给webhook.sh权限
+
+```
+chmod 755 webhook.sh
+```
+
+
 
 #### 6、在服务器内运行webhook.js
 

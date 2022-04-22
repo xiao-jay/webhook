@@ -32,6 +32,14 @@ console.log('receive webhook success')
     run_cmd('sh', ['./webhook.sh',event.payload.repository.name], function(text){ console.log(text) });
 })
 
+handler.on('merge', function (event) {
+console.log('receive webhook success')
+  console.log('Received a merge event for %s to %s',
+    event.payload.repository.name,
+    event.payload.ref)
+    run_cmd('sh', ['./webhook.sh',event.payload.repository.name], function(text){ console.log(text) });
+})
+
 handler.on('issues', function (event) {
   console.log('Received an issue event for %s action=%s: #%d %s',
     event.payload.repository.name,

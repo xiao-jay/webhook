@@ -10,6 +10,8 @@ main="taskschedule.go"   #进程名
 echo ps -ef | grep $main | grep -v "grep" | awk -F " " '{print $2}'
 ps -ef | grep $main | grep -v "grep" | awk -F " " '{print $2}'|xargs kill -9
 
+# wait kill complete
+sleep 1s
 # run cmd in screen
 screen -x -S $screen_name -p 0 -X stuff "$cmd"
 screen -x -S $screen_name -p 0 -X stuff $'\n'
