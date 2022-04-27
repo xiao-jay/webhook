@@ -35,8 +35,9 @@ handler.on('push', function(event) {
 
 handler.on('merge', function(event) {
     count = count + 1
+    console.log('receive merge success ')
     if (count % 3 == 0) {
-        console.log('receive webhook success')
+
         console.log('Received a merge event for %s to %s',
             event.payload.repository.name,
             event.payload.ref)
